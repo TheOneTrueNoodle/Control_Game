@@ -578,6 +578,7 @@ MonoBehaviour:
   - {fileID: 5848763414116411463, guid: 2bfe053a81e2b1546854bb836bec865e, type: 3}
   spawnRangeX: 8
   spawnRangeY: 7
+  spawnRate: 1
 --- !u!4 &326211606
 Transform:
   m_ObjectHideFlags: 0
