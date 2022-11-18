@@ -31,13 +31,13 @@ public class ObstacleSpawner : MonoBehaviour
         int randomIndex = Random.Range(0, obstacles.Length);
         Vector3 randomSpawnPosition = new Vector3(Random.Range(-spawnRangeX / 2, spawnRangeX / 2), Random.Range(-spawnRangeY / 2, spawnRangeY / 2), transform.position.z);
 
-        Instantiate(obstacles[randomIndex], randomSpawnPosition, Quaternion.identity);
+        Instantiate(obstacles[randomIndex], randomSpawnPosition, Quaternion.Euler(0f, 180f, 0f));
 
         yield return new WaitForSeconds(timeToNextSpawn);
         canSpawn = true;
     }
 
-    void OnDrawGizmosSelected()
+    void OnDrawGizmos()
     {
         Gizmos.color = Color.magenta;
         Gizmos.DrawWireCube(transform.position, new Vector3(spawnRangeX, spawnRangeY, 1));

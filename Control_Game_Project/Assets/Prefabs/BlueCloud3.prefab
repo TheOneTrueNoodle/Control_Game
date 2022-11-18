@@ -106,9 +106,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8581100372687215729}
+  - component: {fileID: 1551658183802293879}
+  - component: {fileID: -3105802436308818105}
   m_Layer: 0
   m_Name: BlueCloud3
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,6 +131,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!65 &1551658183802293879
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3213424720352601228}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.616549, y: 0.7133601, z: 1}
+  m_Center: {x: 0.15614164, y: -0.07280131, z: 0}
+--- !u!114 &-3105802436308818105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3213424720352601228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd19f356f855f24fa3bcecbd67386a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &3262104449986393736
 GameObject:
   m_ObjectHideFlags: 0

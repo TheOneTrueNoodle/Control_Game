@@ -15,7 +15,7 @@ public class ObstacleMovement : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(0, 0, -speed * Time.deltaTime);
+        transform.Translate(0, 0, speed * Time.deltaTime);
 
         if (transform.position.z < camera.transform.position.z)
         {
