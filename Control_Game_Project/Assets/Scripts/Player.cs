@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
 
     public int lives = 3;
 
+    Vector3 playerPos = new Vector3(0, 0, 0);
+
     private float horizontalRange;
     private float verticalRange;
 
