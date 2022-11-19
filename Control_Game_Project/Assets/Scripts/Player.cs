@@ -21,8 +21,8 @@ public class Player : MonoBehaviour
     {
         playerControls = new PlayerControls();
 
-        horizontalRange = obstacleSpawner.spawnRangeX;
-        verticalRange = obstacleSpawner.spawnRangeY;
+        horizontalRange = obstacleSpawner.spawnRangeX / 2;
+        verticalRange = obstacleSpawner.spawnRangeY / 2;
 
     }
 
@@ -46,19 +46,25 @@ public class Player : MonoBehaviour
 
         transform.Translate(0, speed * y * Time.deltaTime, 0);
 
-        /*float horizontalMove = Input.GetAxis("Horizontal");
-        float verticalMove = Input.GetAxis("Vertical");
+        if (transform.position.x >= horizontalRange)
+        {
+            transform.Translate(-0.02f, 0, 0);
+        }
 
-        float horizontalOffSet = horizontalMove * speed * Time.deltaTime;
-        float verticalOffSet = verticalMove * speed * Time.deltaTime;
+        if (transform.position.x <= -horizontalRange)
+        {
+            transform.Translate(0.02f, 0, 0);
+        }
 
-        float rawHorizontalPosition = transform.position.x + x;
-        float clampedHorizontalPosition = Mathf.Clamp(rawHorizontalPosition, -horizontalRange / 2, horizontalRange / 2);
+        if (transform.position.y >= verticalRange)
+        {
+            transform.Translate(0, -0.02f, 0);
+        }
 
-        float rawVerticalPosition = transform.position.y + y;
-        float clampedVerticalPosition = Mathf.Clamp(rawVerticalPosition, -verticalRange / 2, verticalRange / 2);
-
-        transform.position = new Vector3(clampedHorizontalPosition, clampedVerticalPosition, transform.position.z);*/
+        if (transform.position.y <= -verticalRange)
+        {
+            transform.Translate(0, 0.02f, 0);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
