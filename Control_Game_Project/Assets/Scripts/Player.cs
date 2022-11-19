@@ -6,11 +6,17 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     private PlayerControls playerControls;
+    private BoxCollider boxCollider;
+
     public ObstacleSpawner obstacleSpawner;
 
+    [Header("Player Stats")]
     public float speed;
 
     public int lives = 3;
+    public float invulnerableTimer = 0.01f;
+
+    public int coins = 0;
 
     Vector3 playerPos = new Vector3(0, 0, 0);
 
@@ -23,6 +29,8 @@ public class Player : MonoBehaviour
 
         horizontalRange = obstacleSpawner.spawnRangeX / 2;
         verticalRange = obstacleSpawner.spawnRangeY / 2;
+
+        boxCollider = FindObjectOfType<BoxCollider>();
 
     }
 
@@ -72,12 +80,22 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag == "Obstacle")
         {
             Destroy(other.gameObject);
+            StartCoroutine(Invulnerable());
             lives--;
         }
 
         if (other.gameObject.tag == "Coin")
         {
             Destroy(other.gameObject);
+            coins++;
         }
+    }
+
+    IEnumerator Invulnerable()
+    {
+        boxCollider.isTrigger = true;
+        //Animation moment???
+        yield return new WaitForSeconds(invulnerableTimer);
+        boxCollider.isTrigger = false;
     }
 }
