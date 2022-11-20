@@ -8,22 +8,25 @@ public class Player : MonoBehaviour
     private PlayerControls playerControls;
     private BoxCollider boxCollider;
 
-    public ObstacleSpawner obstacleSpawner;
-
-    [Header("Player Stats")]
-    public float speed;
-
-    public int lives = 3;
-    public float invulnerableTimer = 0.01f;
-
-    public int coins = 0;
-
     Vector3 playerPos = new Vector3(0, 0, 0);
 
     private float horizontalRange;
     private float verticalRange;
 
+    public ObstacleSpawner obstacleSpawner;
     public ScoreTracker scoreTracker;
+
+    [Header("Player Stats")]
+    public float speed;
+
+    public float invulnerableTimer = 0.01f;
+
+    public int coins = 0;
+
+    [Header("Lives")]
+    public int lives = 3;
+    public GameObject [] hearts;
+
 
     private void Awake()
     {
@@ -33,7 +36,6 @@ public class Player : MonoBehaviour
         verticalRange = obstacleSpawner.spawnRangeY / 2;
 
         boxCollider = FindObjectOfType<BoxCollider>();
-
     }
 
     private void OnEnable()
@@ -76,7 +78,7 @@ public class Player : MonoBehaviour
             transform.Translate(0, 0.02f, 0);
         }
 
-        if (lives <= 0)
+        if (lives <= -1)
         {
             GameOver();
         }
@@ -88,6 +90,7 @@ public class Player : MonoBehaviour
         {
             Destroy(other.gameObject);
             StartCoroutine(Invulnerable());
+            hearts[lives].SetActive(false);
             lives--;
         }
 
