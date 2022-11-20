@@ -23,6 +23,8 @@ public class Player : MonoBehaviour
     private float horizontalRange;
     private float verticalRange;
 
+    public ScoreTracker scoreTracker;
+
     private void Awake()
     {
         playerControls = new PlayerControls();
@@ -73,6 +75,11 @@ public class Player : MonoBehaviour
         {
             transform.Translate(0, 0.02f, 0);
         }
+
+        if (lives <= 0)
+        {
+            GameOver();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -97,5 +104,10 @@ public class Player : MonoBehaviour
         //Animation moment???
         yield return new WaitForSeconds(invulnerableTimer);
         boxCollider.isTrigger = false;
+    }
+
+    public void GameOver()
+    {
+        StartCoroutine(scoreTracker.MainMenu());
     }
 }
