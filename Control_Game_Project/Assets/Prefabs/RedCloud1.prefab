@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8267948311739595378}
   - component: {fileID: 2092718350824066856}
   - component: {fileID: 7793301760108465190}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6090746547620297179}
   - component: {fileID: 5594651491367781913}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Move
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 2339919763917751716}
   - component: {fileID: 7941082340028009401}
   - component: {fileID: 655536732460870879}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3214053019676181321}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RedCloud1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 2563810898675297033}
   - component: {fileID: 4564517095803492607}
   - component: {fileID: 762426501223314871}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9150215205053646129}
   - component: {fileID: 7075164150528849607}
   - component: {fileID: 6340165092999125903}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8210898175580122481}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BlueCloud2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 9012112915405400988}
   - component: {fileID: 3700833006478845313}
   - component: {fileID: 6084516466215207655}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 3446876033134777418}
   - component: {fileID: 4639464161368498448}
   - component: {fileID: 3553123478648922654}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8827322624894103825}
   - component: {fileID: 5010549619804433686}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Move
   m_TagString: Untagged
   m_Icon: {fileID: 0}

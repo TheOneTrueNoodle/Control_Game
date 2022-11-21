@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 256987974433198237}
   - component: {fileID: 1262989470337608585}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Feet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1207166849898926536}
   - component: {fileID: 9128646947428071528}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BatEars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5665136119661860056}
   - component: {fileID: 9128646946121007116}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 5791609759893698530}
   - component: {fileID: 1546628146840892627}
   - component: {fileID: 3882568469969734514}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LeftF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 4138030149233044390}
   - component: {fileID: 6790032022442319096}
   - component: {fileID: 7290935709965964070}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 1602879233578135963}
   - component: {fileID: 7693570639921182742}
   - component: {fileID: 7849410383852900081}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -435,7 +435,7 @@ GameObject:
   - component: {fileID: 1888053725943661275}
   - component: {fileID: 5447799690130103514}
   - component: {fileID: 4074012476803025910}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -518,7 +518,7 @@ GameObject:
   - component: {fileID: 2993121894021649175}
   - component: {fileID: 829412047872244951}
   - component: {fileID: 2704011076389000238}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -600,7 +600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9075942872865303129}
   - component: {fileID: 9128646946761436216}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -656,7 +656,7 @@ GameObject:
   - component: {fileID: 9187105451702269945}
   - component: {fileID: 9028366819622585266}
   - component: {fileID: 3581358200170679430}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LeftR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -752,7 +752,7 @@ GameObject:
   - component: {fileID: 875828410820131451}
   - component: {fileID: 8288073758336350712}
   - component: {fileID: 7802407717727013341}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -835,7 +835,7 @@ GameObject:
   - component: {fileID: 7822813585193411496}
   - component: {fileID: 198748102042118839}
   - component: {fileID: 2220989730386295263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -918,7 +918,7 @@ GameObject:
   - component: {fileID: 4230387361549800449}
   - component: {fileID: 5783158392858157349}
   - component: {fileID: 738648390296160176}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyBatBlue
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -978,7 +978,7 @@ GameObject:
   - component: {fileID: 9108367251195623638}
   - component: {fileID: 6655293689760600861}
   - component: {fileID: 5138925959175664146}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1060,7 +1060,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1373338441418532331}
   - component: {fileID: 9128646946139588749}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BatHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1113,7 +1113,7 @@ GameObject:
   m_Component:
   - component: {fileID: 532456109375837047}
   - component: {fileID: 9128646945959563597}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bat
   m_TagString: Untagged
   m_Icon: {fileID: 0}

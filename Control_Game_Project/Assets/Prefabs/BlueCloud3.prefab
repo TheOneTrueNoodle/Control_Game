@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8653896550478296113}
   - component: {fileID: 7265644850773280711}
   - component: {fileID: 5843424636664949391}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 8581100372687215729}
   - component: {fileID: 1551658183802293879}
   - component: {fileID: -3105802436308818105}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BlueCloud3
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 8932254080971545244}
   - component: {fileID: 3871065099558130817}
   - component: {fileID: 5950453906468287463}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4380871684685981390}
   - component: {fileID: 666539669456677060}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Move
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 2968164956692489546}
   - component: {fileID: 5081882420012322832}
   - component: {fileID: 4011567945072071454}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 6558832728155143459}
   - component: {fileID: 3826290643287377884}
   - component: {fileID: 4486983941564811089}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

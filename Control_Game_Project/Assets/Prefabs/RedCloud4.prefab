@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8309236183801424454}
   - component: {fileID: 4702993654622228508}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Move
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   - component: {fileID: 8150848734287099936}
   - component: {fileID: 2209810369320832378}
   - component: {fileID: 8036489069438013044}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 227726921697353801}
   - component: {fileID: 7869227677666728630}
   - component: {fileID: 7379240276930239035}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 3403202495190303003}
   - component: {fileID: 7455559266958839126}
   - component: {fileID: 177290188843440516}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RedCloud4
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 2583120267503159286}
   - component: {fileID: 7896044635119143403}
   - component: {fileID: 772624335731191437}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 2320614945806903643}
   - component: {fileID: 4393378600473598637}
   - component: {fileID: 663340103382005733}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

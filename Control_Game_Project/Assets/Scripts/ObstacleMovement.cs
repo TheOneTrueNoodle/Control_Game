@@ -10,7 +10,7 @@ public class ObstacleMovement : MonoBehaviour
 
     private void Awake()
     {
-        camera = GameObject.Find("Main Camera").GetComponent<Transform>();
+        camera = GameObject.Find("Player 1 Cam").GetComponent<Transform>();
     }
 
     void Update()
