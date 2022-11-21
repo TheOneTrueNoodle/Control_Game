@@ -6,9 +6,8 @@ using TMPro;
 
 public class ScoreTracker : MonoBehaviour
 {
-    [HideInInspector] public string HighScoreName;
+    public string HighScoreName;
     [HideInInspector] public int Score;
-    private HighScoreEntry NewScore;
 
     public string MainMenuScene;
     public Animator transition;
@@ -52,9 +51,7 @@ public class ScoreTracker : MonoBehaviour
             yield return null;
         }
 
-        NewScore.name = HighScoreName;
-        NewScore.score = Score;
-        FindObjectOfType<HighScores>().newScore = NewScore;
+        FindObjectOfType<HighScores>().AddNewScore(HighScoreName, Score);
         SceneManager.UnloadSceneAsync(currentScene);
     }
 }

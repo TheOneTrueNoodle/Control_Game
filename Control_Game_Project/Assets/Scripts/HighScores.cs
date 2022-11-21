@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class HighScores : MonoBehaviour
 {
@@ -9,29 +11,26 @@ public class HighScores : MonoBehaviour
     public XMLManager xmlManager;
     [Header("Gameplay Values")]
     public HighScoreDisplay[] highScoreDisplayArray;
-    List<HighScoreEntry> scores = new List<HighScoreEntry>();
+    public List<HighScoreEntry> scores;
 
     public string GameScene;
     public Animator transition;
 
-    public HighScoreEntry newScore;
-    void Start()
+    public string newScoreName;
+    public int newScore;
+    [SerializeField] private TMP_InputField NameInput;
+
+    private void Awake()
     {
-        // Adds some test data
-        foreach(HighScoreEntry score in xmlManager.LoadScores())
-        {
-            AddNewScore(score.name, score.score);
-        }
+        scores = xmlManager.LoadScores();
+    }
 
-        if(newScore != null)
-        {
-            AddNewScore(newScore.name, newScore.score);
-        }
-
-        xmlManager.SaveScores(scores);
+    private void Start()
+    {
         UpdateDisplay();
     }
-    void UpdateDisplay()
+
+    private void UpdateDisplay()
     {
         scores.Sort((HighScoreEntry x, HighScoreEntry y) => y.score.CompareTo(x.score));
         for (int i = 0; i < highScoreDisplayArray.Length; i++)
@@ -46,29 +45,44 @@ public class HighScores : MonoBehaviour
             }
         }
     }
-    void AddNewScore(string entryName, int entryScore)
+    public void AddNewScore(string entryName, int entryScore)
     {
         scores.Add(new HighScoreEntry { name = entryName, score = entryScore });
+        UpdateDisplay();
     }
 
-    void StartNewGame(string entryName)
+    public void StartNewGame()
     {
-        StartCoroutine(LoadGame(entryName));
+        StartCoroutine(LoadGame());
     }
 
-    IEnumerator LoadGame(string entryName)
+    IEnumerator LoadGame()
     {
-        Scene currentScene = SceneManager.GetActiveScene();
-        if (transition != null) { transition.SetTrigger("Start"); }
-
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(GameScene, LoadSceneMode.Additive);
-
-        while (!asyncLoad.isDone)
+        if(NameInput.text != "")
         {
-            yield return null;
-        }
+            Scene currentScene = SceneManager.GetActiveScene();
+            if (transition != null) { transition.SetTrigger("Start"); }
 
-        FindObjectOfType<ScoreTracker>().HighScoreName = entryName;
-        SceneManager.UnloadSceneAsync(currentScene);
+            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(GameScene, LoadSceneMode.Additive);
+
+            while (!asyncLoad.isDone)
+            {
+                yield return null;
+            }
+
+            FindObjectOfType<ScoreTracker>().HighScoreName = NameInput.text;
+            save();
+            SceneManager.UnloadSceneAsync(currentScene);
+        }
+    }
+
+    void save()
+    {
+        xmlManager.SaveScores(scores);
+    }
+
+    private void OnApplicationQuit()
+    {
+        save();
     }
 }

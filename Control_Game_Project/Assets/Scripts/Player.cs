@@ -27,6 +27,8 @@ public class Player : MonoBehaviour
     public int lives = 3;
     public GameObject [] hearts;
 
+    private bool Dead;
+
 
     private void Awake()
     {
@@ -78,7 +80,7 @@ public class Player : MonoBehaviour
             transform.Translate(0, 0.02f, 0);
         }
 
-        if (lives <= -1)
+        if (lives <= -1 & Dead != true)
         {
             GameOver();
         }
@@ -112,5 +114,6 @@ public class Player : MonoBehaviour
     public void GameOver()
     {
         StartCoroutine(scoreTracker.MainMenu());
+        Dead = true;
     }
 }
